@@ -1,0 +1,249 @@
+body {
+     font-family: 'Inter', sans-serif;
+     background-color: #f4f4f9;
+     margin: 0;
+     color: #333;
+}
+
+
+.hero-section {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg');
+     background-size: cover;
+     background-position: center;
+     padding-bottom: 80px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+}
+
+
+.main-header {
+     background-color: transparent;
+     width: 100%;
+     display: flex;
+     justify-content: flex-end;
+     padding: 30px 40px;
+     box-sizing: border-box;
+}
+
+.header-nav {
+     display: flex;
+     gap: 15px;
+     flex-wrap: wrap;
+}
+
+.nav-btn {
+     background: rgba(255, 255, 255, 0.1);
+     border: 1px solid rgba(255, 255, 255, 0.3);
+     color: white;
+     padding: 8px 20px;
+     border-radius: 20px;
+     font-size: 0.8rem;
+     text-transform: uppercase;
+     font-weight: 600;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+.nav-btn:hover {
+     background: white;
+     color: black;
+}
+
+.main-title {
+     font-size: clamp(3rem, 10vw, 4.5rem);
+     color: white;
+     letter-spacing: 5px;
+     margin: 10px 0 50px 0;
+     font-weight: 800;
+     text-align: center;
+}
+
+
+.search-bar {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     width: 90%;
+     max-width: 800px;
+     flex-wrap: wrap;
+}
+
+.input-wrapper {
+     position: relative;
+     display: flex;
+     align-items: center;
+     flex: 2;
+     min-width: 280px;
+}
+
+.search-bar input {
+     padding: 15px 15px 15px 45px;
+     border-radius: 30px;
+     border: none;
+     width: 100%;
+     font-size: 1rem;
+     outline: none;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar select {
+     flex: 1;
+     min-width: 150px;
+     padding: 15px;
+     border-radius: 30px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+     gap: 30px;
+     max-width: 1200px;
+     margin: 50px auto;
+     padding: 0 20px;
+}
+
+.card {
+     background: white;
+     border-radius: 12px;
+     text-decoration: none;
+     color: inherit;
+     overflow: hidden;
+     transition: 0.3s;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+     transform: translateY(-8px);
+}
+
+.card img {
+     width: 100%;
+     height: 170px;
+     object-fit: cover;
+}
+
+.card-info {
+     padding: 20px;
+     text-align: center;
+}
+
+
+.nav-container {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 25px;
+     padding: 40px 0 80px 0;
+     width: 100%;
+}
+
+.nav-container button {
+     padding: 12px 25px;
+     border-radius: 30px;
+     border: none;
+     background-color: #222;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+     transition: 0.3s;
+     min-width: 120px;
+}
+
+.nav-container button:hover {
+     background-color: #555;
+}
+
+.nav-container button:disabled {
+     background-color: #ccc;
+     cursor: not-allowed;
+}
+
+.nav-container span {
+     font-weight: 700;
+     color: #333;
+     font-size: 1rem;
+}
+
+
+.detail-page-wrapper {
+     max-width: 1000px;
+     margin: 40px auto;
+     padding: 20px;
+     color: #333;
+}
+
+.back-button {
+     text-decoration: none;
+     color: #333;
+     font-weight: bold;
+     display: inline-flex;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 30px;
+     padding: 8px 15px;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     background: white;
+     transition: 0.3s;
+}
+
+.back-button:hover {
+     background: #f0f0f0;
+}
+
+.detail-content {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 50px;
+     background: white;
+     padding: 40px;
+     border-radius: 15px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+     align-items: center;
+}
+
+.detail-left {
+     flex: 1;
+     min-width: 300px;
+}
+
+.detail-right {
+     flex: 1.2;
+     min-width: 300px;
+}
+
+.detail-flag-large {
+     width: 100%;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 25px;
+     margin-top: 30px;
+}
+
+.info-item .info-label {
+     font-size: 0.75rem;
+     color: #999;
+     font-weight: 800;
+     margin-bottom: 5px;
+     text-transform: uppercase;
+}
+
+.info-item .info-value {
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: #222;
+     margin: 0;
+}
