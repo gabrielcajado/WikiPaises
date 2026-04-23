@@ -35,7 +35,7 @@ function App() {
 
   const fetchCountriesData = async () => {
     try {
-      const response = await api.get('all?fields=name,flags,capital,region,cca3,translations')
+      const response = await api.get('/all?fields=name,flags,capital,region,cca3,translations')
       setCountriesList(response.data)
     } catch (err) {
       console.error('Falha ao carregar os dados:', err)
