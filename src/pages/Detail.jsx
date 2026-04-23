@@ -7,7 +7,7 @@ function Detail() {
      const [country, setCountry] = useState(null);
 
      useEffect(() => {
-          api.get(`/alpha/${code}`).then(response => {
+          api.get(`alpha/${code}`).then(response => {
                setCountry(response.data[0]);
           });
      }, [code]);
